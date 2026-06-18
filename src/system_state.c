@@ -5,7 +5,7 @@ SystemState_t g_system;
 
 void system_state_init(void)
 {
-	/*TODO: 
+	/*
 		1. Establecer el valor de value a cero, 
 		2. Establecer periodo_ms a una velocidad,
 		3. Establecer dirección,

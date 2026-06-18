@@ -88,7 +88,7 @@ static void manager_pause_system(void)
        - no ejecuta más pasos
        - NO regresa solo; necesita vTaskResume()
     */
-    /*TODO*/
+
     vTaskSuspend(h_counter);
 
     /*
@@ -96,7 +96,7 @@ static void manager_pause_system(void)
        Solo queda activo START/PAUSE.
     */
     
-	/*TODO*/
+
     vTaskSuspend(h_btn_dir);
     vTaskSuspend(h_btn_speed);
 
@@ -251,7 +251,7 @@ static void task_manager(void *pvParameters)
 void app_tasks_create(void)
 {
     
-	/* TODO --> Creación de tareas */
+	/* Creación de tareas */
     xTaskCreate(led_task, "LED_B0", 2048, &led_params[0], 1, &h_leds[0]);
     xTaskCreate(led_task, "LED_B1", 2048, &led_params[1], 1, &h_leds[1]);
     xTaskCreate(led_task, "LED_B2", 2048, &led_params[2], 1, &h_leds[2]);

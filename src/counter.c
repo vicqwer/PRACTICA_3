@@ -10,7 +10,7 @@ static const char *TAG = "COUNTER";
 
 static void counter_step(void)
 {
-	/*TODO --> Si g_system.direction = COUNT_UP entonces g_system.value incrementa su valor*/
+	/* Si g_system.direction = COUNT_UP entonces g_system.value incrementa su valor*/
     if (g_system.direction == COUNT_UP)
 	{
 		if (g_system.value >= 9)
@@ -24,7 +24,7 @@ static void counter_step(void)
     }
     else
     {
-	/*TODO --> Si g_system.direction = COUNT_DOWN entonces g_system.value decrementa su valor*/
+	/* Si g_system.direction = COUNT_DOWN entonces g_system.value decrementa su valor*/
         if (g_system.value == 0)
         {
             g_system.value = 9;

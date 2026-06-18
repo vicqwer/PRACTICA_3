@@ -21,7 +21,7 @@ void led_task(void *pvParameters)
 		
         bit_value = (g_system.value >> cfg->bit_position) & 0x01;
 
-		/*TODO --> Después de actualizar el valor de bit_value, enviar a gpio*/
+		/* Después de actualizar el valor de bit_value, enviar a gpio*/
 		gpio_set_level((gpio_num_t)cfg->gpio, bit_value);
         
 
