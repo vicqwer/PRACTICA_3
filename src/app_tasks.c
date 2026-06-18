@@ -88,7 +88,7 @@ static void manager_pause_system(void)
        - no ejecuta más pasos
        - NO regresa solo; necesita vTaskResume()
     */
-
+/* Suspender tarea del contador */
     vTaskSuspend(h_counter);
 
     /*
@@ -163,7 +163,7 @@ static void manager_print_states(void)
 
     for (int i = 0; i < 4; i++)
     {
-        //ESP_LOGI(TAG,"%s: %s",led_params[i].name,state_to_string(eTaskGetState(h_leds[i])));
+        ESP_LOGI(TAG,"%s: %s",led_params[i].name,state_to_string(eTaskGetState(h_leds[i])));
     }
 
     ESP_LOGI(TAG,"Valor=%u | Modo=%s | Direccion=%s | Periodo=%lu ms",
